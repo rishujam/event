@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">event</string>
+    <string name="partiRef">participants</string>
+    <string name="orgRef">profileColl</string>
+    <string name="eventRef">events</string>
+    <string name="utils">utils</string>
+    <string name="form_ref">regForm</string>
+    <string name="form_data">formData</string>
+    <string name="otp_apikey">9de6317b-1fbd-11ec-a13b-0200cd936042</string>
+    <string name="razor_pay">rzp_test_Ii8UlwBKznLAYH</string>
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Public Speaking</item>
+        <item >Strategies</item>
+        <item>Team Work</item>
+        <item>Programming</item>
+        <item>Marketing</item>
+        <item>Sales</item>
+    </string-array>
+</resources>

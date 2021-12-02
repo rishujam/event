@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cdMyEvent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.0px"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    app:cardElevation="10dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardPreventCornerOverlap="false"
+    android:elevation="10dp"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivEventIconMyE"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/exp2"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/gdlMyE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitleMyE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:text="Architecture Workshop"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/gdlMyE"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLocationMyE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:drawableStart="@drawable/ic_location"
+            android:text="Ghaziabad"
+            android:paddingTop="8dp"
+            android:drawablePadding="8dp"
+            app:layout_constraintStart_toEndOf="@+id/gdlMyE"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleMyE" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gdlMyE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <TextView
+            android:id="@+id/tvDateMyE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_calander"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="21 June 2022"
+            app:layout_constraintStart_toStartOf="@+id/gdlMyE"
+            app:layout_constraintTop_toBottomOf="@+id/tvLocationMyE" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:src="@drawable/text_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFeeMyE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹100"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingRight="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
